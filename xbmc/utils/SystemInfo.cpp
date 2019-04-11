@@ -1220,7 +1220,7 @@ std::string CSysInfo::GetDeviceName()
   {
     std::string hostname("[unknown]");
     CServiceBroker::GetNetwork().GetHostName(hostname);
-    return StringUtils::Format("%s (%s)", friendlyName.c_str(), hostname.c_str());
+      return StringUtils::Format("%s :: %s", hostname.c_str(), friendlyName.c_str());
   }
 
   return friendlyName;
